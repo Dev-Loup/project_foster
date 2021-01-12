@@ -8,7 +8,7 @@ import myTeam from './pages/myTeam';
 
 function App() {
   return (
-    <>
+    <div className='app'>
       <Navbar />
         <Switch>
           <Route path='/' exact component={Home}></Route>
@@ -16,7 +16,7 @@ function App() {
           <Route path='/my-team' exact component={myTeam}></Route>
         </Switch>
       <Footer />
-    </>
+    </div>
   );
 }
 
