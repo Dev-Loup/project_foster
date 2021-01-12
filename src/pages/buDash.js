@@ -77,11 +77,11 @@ const Budash = () => {
                                     chars.map(char => <div className='proy-item' onClick={() => handleClick2(char)} key={char.name + char.id}>{char.name}</div>)
                             }
                         </div>
-                        <div className= 'flex flex-col m-2 w-1/2'>
-                            <p className='py-3'>Objectives Milestone Resume</p>
-                            {!info ? 'seleccione personaje': 
+                        <div className= 'flex flex-col m-2 w-1/2 items-center'>
+                            <p className=' m-2 text-xl'> Character photo</p>
+                            {!info ? <div className='md-2'>seleccione personaje</div>: 
                             <>
-                                <img src={info.image} alt={info.name}/>
+                                <img src={info.image} alt={info.name} className='rounded-xl m-2'/>
                             </>
                             }
                         </div>
