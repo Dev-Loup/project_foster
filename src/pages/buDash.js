@@ -8,7 +8,6 @@ const Budash = () => {
     useEffect(() => {
         const getAPI = async () => {
             const { data } = await axios.get('https://rickandmortyapi.com/api/location/3,20,50,65')
-            console.log(data)
             setResp(data)
         }
         getAPI()
